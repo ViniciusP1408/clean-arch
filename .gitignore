@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# IDEs
+.idea/
+*.iml
+
+# Java build
+out/
+*.class
+
+# Aux files
+sources.txt
