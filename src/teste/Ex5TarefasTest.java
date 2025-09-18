@@ -16,7 +16,6 @@ public class Ex5TarefasTest {
         InMemoryTarefaRepository repo = new InMemoryTarefaRepository();
         new CriarTarefaUseCase(repo).executar("Estudar Clean Architecture");
 
-        // Nenhuma tarefa deve ser criada já concluída
         long concluidas = repo.listarTodas().stream()
                 .filter(t -> t.getStatus() == Tarefa.Status.CONCLUIDA)
                 .count();

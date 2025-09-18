@@ -21,5 +21,6 @@ public class App {
         concluir.executar(tarefa);
 
         listarPendentes.executar().forEach(t -> System.out.println("Pendente: "+t.getDescricao()));
+        System.out.println(tarefa.getDescricao() + " " +  tarefa.getStatus());
     }
 }
